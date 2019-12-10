@@ -2,7 +2,7 @@ package ExpresionesRegulares;
 
 public class ComprobarExpresiones {
 	
-	String[] reglas = {"[a-z]","[0-9]"};
+	String[] reglas = {"[a-z]","[0-9]","[A-Z]"};
 	
 	public boolean comprobarExpresion(String expresion) {
 		
