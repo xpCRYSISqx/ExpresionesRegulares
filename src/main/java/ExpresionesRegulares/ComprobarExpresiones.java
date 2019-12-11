@@ -6,9 +6,11 @@ public class ComprobarExpresiones {
 	
 	public boolean comprobarExpresion(String expresion) {
 		
-		for(int i = 0; i < reglas.length; i++) {
-			if(reglas[i].equals(expresion))
-				return true;
+		if(expresion.length() == 5) {
+			for(int i = 0; i < reglas.length; i++) {
+				if(expresion.charAt(1) >= reglas[i].charAt(1) && expresion.charAt(3) <= reglas[i].charAt(3))
+					return true;
+			}
 		}
 		return false;
 	}
