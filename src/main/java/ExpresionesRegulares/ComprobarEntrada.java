@@ -20,8 +20,9 @@ public class ComprobarEntrada {
 				if(texto.charAt(0) >= margen[0].charAt(0) && texto.charAt(0) <= margen[1].charAt(0))
 					return true;
 			}
-			return false;
 		}
+		return false;
+		
 	}
 	
 }
